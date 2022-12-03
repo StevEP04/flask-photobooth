@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photos</title>
+</head>
+<body>
+    {% for photo in photos %}
+        <div class="image">
+            <img src="{{photo}}" width="480px" height="400px">
+        </div>
+    {% endfor %}
+</body>
+</html>

@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
     <title>Document</title>
 </head>
 <body>
-   <h1>Flask Photo Booth</h1> 
-
+    <main>
+        <div class="main-box">
+        <h1>Flask Photo Booth</h1> 
+            <p>Prepare for the Photo :D</p>
+            <p>Click Ready when you are ready!</p>
+            <div class="button">
+                <button><a href="/capture">Ready!</a>
+            </div>
+            <div class="show-images">
+                <p>You are all set!</p>
+                <a href="/all">See all your images</a></button>
+            </div>
+            <div class="my image">
+                <img src="{{photo}}" alt="the-Photos">
+            </div>
+        </div>
+    </main>
 </body>
 </html>
